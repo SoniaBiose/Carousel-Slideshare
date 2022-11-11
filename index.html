@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+    <link rel="stylesheet" href="style.css" />
+   
+  </head>
+  <body>
+    <h1>Step-by-step guide to an effective workout session</h1>
+    <div class="carousel-container ">
+     
+      <div class="slides">
+        <div class="slide-num fade">1 / 6</div>
+        <img src="images/stretch start.jpg" alt="" style="width: 100%" />
+        <div class="slide-info">Start with a good stretch</div>
+      </div>
+
+      <div class="slides fade">
+        <div class="slide-num">2 / 6</div>
+        <img src="images/cardio.jpg" alt="" style="width: 100%" />
+        <div class="slide-info">Followed by some cardio</div>
+      </div>
+
+      <div class="slides fade">
+        <div class="slide-num">3 / 6</div>
+        <img src="images/full body.jpg" alt="" style="width: 100%" />
+        <div class="slide-info">Next is a full body exercise</div>
+      </div>
+
+      <div class="slides fade">
+        <div class="slide-num">4 / 6</div>
+        <img src="images/resistance band.jpg" alt="" style="width: 100%" />
+        <div class="slide-info">
+          Supplement with resistance bands
+        </div>
+      </div>
+
+      <div class="slides fade">
+        <div class="slide-num">5 / 6</div>
+        <img src="images/weight.jpg" alt="" style="width: 100%" />
+        <div class="slide-info">Or any weight of your choice</div>
+      </div>
+
+      <div class="slides fade">
+        <div class="slide-num">6 / 6</div>
+        <img src="images/stretch end.jpg" alt="" style="width: 100%" />
+        <div class="slide-info">
+          Finish up with a stretch </div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)"> &#10094 </a>
+        <a class="next" onclick="plusSlides(1)"> &#10095 </a>
+      </div>
+      <br>
+      <div style="text-align:center">
+         <span class="dots" onclick="currentSlide(1)"></span>
+         <span class="dots" onclick="currentSlide(2)"></span>
+         <span class="dots" onclick="currentSlide(3)"></span>
+         <span class="dots" onclick="currentSlide(4)"></span>
+         <span class="dots" onclick="currentSlide(5)"></span>
+         <span class="dots" onclick="currentSlide(6)"></span>
+       </div>
+       <script  type="text/javascript" src="script.js"></script>
+  </body>
+</html>
