@@ -13,25 +13,26 @@ body {
   background-attachment: fixed;
 }
 h1 {
-  position: absolute;
-  top: 20px;
-  left: 28%;
+  position: relative;
+  max-width: 100vw;
   margin-bottom: 10px;
+  margin-top: 20px;
   text-shadow: 1px 1px 4px beige;
+  text-align: center;
 }
 .carousel-container {
-  width: 55%;
+  width: 50%;
   max-width: 1000px;
   position: relative;
   margin: auto;
-  margin-top: 60px;
+  margin-top: 65px;
 }
 .slides {
   display: none;
 }
 img {
   min-width: 100%;
-  min-width: 100%;
+  min-height: 100%;
 }
 
 .prev,
@@ -59,7 +60,7 @@ img {
 }
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.999);
 }
 
 .slide-info {
@@ -98,8 +99,6 @@ img {
 }
 
 .fade {
-  /* -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.4s; */
   animation-name: fade;
   animation-duration: 1.4s;
 }
@@ -110,5 +109,30 @@ img {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    display: flex;
+    min-height: 100vh;
+    max-height: 100vh;
+  }
+  h1 {
+    position: relative;
+    max-width: 30vw;
+    justify-content: flex-start;
+    margin-top: 10%;
+  }
+  .carousel-container {
+    display: flex;
+    max-width: 65vw;
+    position: relative;
+    top: 50%;
+    min-height: 50vh;
+    max-height: 50vh;
+  }
+  .dots {
+    display: none;
   }
 }
